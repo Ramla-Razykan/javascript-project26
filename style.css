@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, #232323, #3d3e3f);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 8rem;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 3rem;
+}
+
+canvas {
+    border-radius: 1rem;
+    border: 3px dashed #ff0000;
+    background-color: #2d2e2e;
+}
+
+#scoreDisplay {
+    position: absolute;
+    top: 23%;
+    left: 54%;
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.key-buttons button,
+.end-restart-button button {
+    width: 10rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.end-restart-button button {
+    width: 15rem;
+}
+
+.key-buttons button:hover,
+.end-restart-button button:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+@media (max-width: 1440px) {
+    #scoreDisplay {
+        top: 17%;
+    }
+}
+@media (max-width: 1024px) {
+    html{
+        font-size: 55%;
+    }
+    #scoreDisplay {
+        top: 17%;
+    }
+
+    canvas {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px){
+    canvas {
+        width: 55%;
+    }
+}
+
+@media (max-width: 430px) {
+    html {
+        font-size: 55%;
+    }
+
+    #scoreDisplay {
+        top: 20%;
+        left: 73%;
+    }
+
+    canvas {
+        width: 90%;
+    }
+}
+
+@media (max-width: 414px) {
+    html {
+        font-size: 55%;
+    }
+
+    #scoreDisplay {
+        top: 23%;
+        left: 75%;
+    }
+}
+
+@media (max-width: 390px) {
+    html {
+        font-size: 50%;
+    }
+
+    #scoreDisplay {
+        top: 25%;
+        left: 72%;
+    }
+
+    canvas {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+
+    #scoreDisplay {
+        top: 20%;
+        left: 70%;
+    }
+
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 50%;
+    }
+
+    #scoreDisplay {
+        top: 23%;
+        left: 70%;
+    }
+}
+
+@media (max-width: 344px) {
+    html {
+        font-size: 45%;
+    }
+
+    #scoreDisplay {
+        top: 29%;
+        left: 70%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 45%;
+    }
+
+    #scoreDisplay {
+        top: 27%;
+        left: 70%;
+    }
+}
